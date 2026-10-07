@@ -1,84 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Alex Morgan</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <h1>Portfolio</h1>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                     <li><a href="#contact">Contact</a></li>
-                </ul>
 
-            </nav>
-        </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Alex Morgan — Frontend Developer specializing in building modern, responsive web experiences. View projects, skills, and get in touch." />
+  <meta name="keywords" content="Alex Morgan, Frontend Developer, HTML, CSS, JavaScript, Portfolio, Web Developer" />
+  <meta property="og:title" content="Alex Morgan | Frontend Developer Portfolio" />
+  <meta property="og:description" content="I build modern and responsive web experiences." />
+  <meta property="og:type" content="website" />
+  <title>Alex Morgan | Frontend Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <main>
-            <section id="Home">
-                <h1>Hello, I'm Alex Morgan</h1>
-                <h2>Fronted Developer</h2>
-                <p>I build modern and responsive web experiences</p>
+<body>
 
-                <button>View Project</button>
-                <button>Contact Me</button>
-            </section>
+  <!-- ═══════════════════════════════════════════════════════
+       NAVIGATION
+  ═════════════════════════════════════════════════════════ -->
+  <header>
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav__inner">
 
-            <section id="about">
-                <h1>about me</h1>
-                <p>I'm Alex Morgan, a frontend developer who enjoys creating modern and responsive websites.</p>
-                <p>I enjoy learning new technologies and creating useful digital experiences.</p>
-                <p> Experience: 2+ years </p> 
-                <p> Location: Addis Ababa </p> 
-                <p> Focus: Frontend Development </p>
-            </section>
-            <section id="skills"> 
-                <h1>My Skills</h1> 
-                <ul> 
-                    <button>HTML</button> 
-                    <button>CSS</button> 
-                    <button>JavaScript</button> 
-                    <button>Git</button> 
-                    <button>Responsive Design</button> 
-                </ul> 
-            </section>
+        <a href="#home" class="nav__brand" id="nav-brand" aria-label="Alex Morgan home">
+          Alex <span>Morgan</span>
+        </a>
 
-            <section id="projects"> 
-                <h1>My Projects</h1> 
-                <button> All </button> 
-                <button> JavaScript </button> 
-                <button> HTML/CSS </button> 
-                <button> Other </button> 
-                <p> Loading projects... </p>
-                <div id="projects-container"> </div>
-            </section>
+        <!-- Desktop links -->
+        <ul class="nav__links" id="nav-links" role="list">
+          <li><a href="#home" id="nav-home" class="active">Home</a></li>
+          <li><a href="#about" id="nav-about">About</a></li>
+          <li><a href="#skills" id="nav-skills">Skills</a></li>
+          <li><a href="#projects" id="nav-projects">Projects</a></li>
+          <li><a href="#contact" id="nav-contact">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger (mobile) -->
+        <button class="nav__hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+      <!-- Mobile dropdown menu -->
+      <nav class="nav__mobile" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#home" id="mob-home" class="active">Home</a>
+        <a href="#about" id="mob-about">About</a>
+        <a href="#skills" id="mob-skills">Skills</a>
+        <a href="#projects" id="mob-projects">Projects</a>
+        <a href="#contact" id="mob-contact">Contact</a>
+      </nav>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HERO / HOME
+  ═════════════════════════════════════════════════════════ -->
+  <main>
+    <section id="home" aria-labelledby="hero-heading">
+      <div class="hero__portrait-wrapper">
+        <div class="portrait__shapes">
+          <div class="portrait__shape portrait__shape--1"></div>
+          <div class="portrait__shape portrait__shape--2"></div>
+        </div>
+        <div class="portrait__card">
+          <img src="public/Code.png" alt="Alex Morgan Portrait" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero__inner">
+          <h1 class="hero__heading" id="hero-heading">
+            Hello, I'm<br />Alex Morgan
+          </h1>
+
+          <p class="hero__sub">Frontend Developer</p>
+
+          <p class="hero__text">
+            I build modern and responsive web experiences. Passionate about clean code,
+            beautiful design, and building products people love to use.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary" id="hero-btn-projects">
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn--outline" id="hero-btn-contact">
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         ABOUT ME
+    ═════════════════════════════════════════════════════════ -->
+    <section id="about" class="section section--alt" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title" id="about-heading">About Me</h2>
+        </div>
+
+        <div class="about__content reveal">
+          <!-- Replace the content below with your own photo or logo -->
+          <div class="about__avatar" role="img" aria-label="Alex Morgan avatar">
+            <span class="icon-slot" title="Add your photo here">AM</span>
+          </div>
+
+          <p class="about__bio">
+            Hi! I'm <strong>Alex Morgan</strong>, a passionate Frontend Developer based in
+            <strong>San Francisco, CA</strong> with over <strong>4 years of experience</strong>
+            crafting performant, accessible, and visually stunning web applications.
+            I thrive at the intersection of design and technology — turning complex problems
+            into elegant, intuitive user experiences. When I'm not coding, you'll find me
+            hiking coastal trails, experimenting with generative art, or contributing to
+            open-source projects.
+          </p>
+
+          <div class="about__facts reveal-stagger">
+            <div class="about__fact"><span class="icon-slot"></span> San Francisco, CA</div>
+            <div class="about__fact"><span class="icon-slot"></span> 4+ Years Experience</div>
+            <div class="about__fact"><span class="icon-slot"></span> BSc Computer Science</div>
+            <div class="about__fact"><span class="icon-slot"></span> Coffee-Driven Developer</div>
+            <div class="about__fact"><span class="icon-slot"></span> Open Source Contributor</div>
+            <div class="about__fact"><span class="icon-slot"></span> UI/UX Enthusiast</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         MY SKILLS
+    ═════════════════════════════════════════════════════════ -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title" id="skills-heading">My Skills</h2>
+          <p class="section__sub">Technologies and tools I work with every day</p>
+        </div>
+
+        <div class="skills__grid reveal-stagger" id="skills-grid">
+          <div class="skill-card" data-level="95">
+            <span class="skill-card__icon icon-slot"></span>
+            <div class="skill-card__name">HTML5</div>
+            <img src="public/HTML.jpg">
+            <div class="skill-card__level">Expert · 95%</div>
+            <div class="skill-card__bar">
+              <div class="skill-card__fill" style="--w:.95"></div>
+            </div>
+          </div>
+          <div class="skill-card" data-level="90">
+            <span class="skill-card__icon icon-slot"></span>
+            <div class="skill-card__name">CSS3</div>
+            <img src="public/CSS.jpg">
+            <div class="skill-card__level">Expert · 90%</div>
+            <div class="skill-card__bar">
+              <div class="skill-card__fill" style="--w:.90"></div>
+            </div>
+          </div>
+          <div class="skill-card" data-level="88">
+            <span class="skill-card__icon icon-slot"></span>
+            <div class="skill-card__name">JavaScript</div>
+            <img src="public/js.png">
+            <div class="skill-card__level">Advanced · 88%</div>
+            <div class="skill-card__bar">
+              <div class="skill-card__fill" style="--w:.88"></div>
+            </div>
+          </div>
+          <div class="skill-card" data-level="82">
+            <span class="skill-card__icon icon-slot"></span>
+            <div class="skill-card__name">Git</div>
+            <img src="public/git.jpg">
+            <div class="skill-card__level">Advanced · 82%</div>
+            <div class="skill-card__bar">
+              <div class="skill-card__fill" style="--w:.82"></div>
+            </div>
+          </div>
+          <div class="skill-card" data-level="92">
+            <span class="skill-card__icon icon-slot"></span>
+            <div class="skill-card__name">Responsive Design</div>
+            <img src="public/Re.jpg">
+            <div class="skill-card__level">Expert · 92%</div>
+            <div class="skill-card__bar">
+              <div class="skill-card__fill" style="--w:.92"></div>
+            </div>
+          </div>
+          <div class="skill-card" data-level="78">
+            <span class="skill-card__icon icon-slot"></span>
+            <div class="skill-card__name">UI/UX Design</div>
+            <img src="public/Uiux.jpg">
+            <div class="skill-card__level">78%</div>
+          </div>
+          <div class="skill-card" data-level="75">
+            <span class="skill-card__icon icon-slot"></span>
+            <div class="skill-card__name">REST APIs</div>
+            <img src="public/api.jpg">
+            <div class="skill-card__level">75%</div>
+          </div>
+          <div class="skill-card" data-level="70">
+            <span class="skill-card__icon icon-slot"></span>
+            <div class="skill-card__name">Testing</div>
+            <img src="public/Test.jpg">
+            <div class="skill-card__level">70%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         PROJECTS
+    ═════════════════════════════════════════════════════════ -->
+    <section id="projects" class="section section--alt" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title" id="projects-heading">Projects</h2>
+          <p class="section__sub">Loaded from an API &bull; Filter buttons &bull; View Details modal</p>
+        </div>
 
 
-            <section id="contact">
-                <h1>Contact me</h1>
-                <form id="contactForm">
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="your name..">
-                    <input 
-                    type="email" 
-                    id="email" 
-                    placeholder="Your email" > 
-                    <textarea id="message" placeholder="Your message">   </textarea> 
-                    <button type="submit"> Send Message </button>
-                </form>
+        <div class="filter-row reveal" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" id="filter-all" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" id="filter-js" data-filter="javascript" aria-pressed="false">JavaScript</button>
 
-            </section>
-        </main>
-        <footer>
-            <p>HTML, CSS, JavaScript | Group Exam </footer>
-    </body>
+        </div>
+
+
+        <div id="projects-status">
+          <div class="spinner" role="status" aria-label="Loading projects"></div>
+          <p class="status-msg">Loading projects...</p>
+        </div>
+
+        <div class="projects__grid" id="projects-grid" role="list" aria-label="Projects"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         CONTACT
+    ═════════════════════════════════════════════════════════ -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title" id="contact-heading">Contact</h2>
+          <p class="section__sub">Have a project in mind? Let's build something great together.</p>
+        </div>
+
+        <div class="contact__wrapper">
+
+          <div class="contact__info reveal">
+            <h3>Let's Talk</h3>
+            <p>I'm currently available for freelance projects and full-time opportunities. Don't hesitate to reach out —
+              I usually respond within 24 hours.</p>
+            <div class="contact__details">
+              <div class="contact__detail">
+                <span class="icon-slot"></span>
+                <span>alex.morgan@example.com</span>
+              </div>
+              <div class="contact__detail">
+                <span class="icon-slot"></span>
+                <span>San Francisco, CA, USA</span>
+              </div>
+              <div class="contact__detail">
+                <span class="icon-slot"></span>
+                <span>+1 (555) 234-5678</span>
+              </div>
+              <div class="contact__detail">
+                <span class="icon-slot"></span>
+                <span>alexmorgan.dev</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <form class="contact-form reveal" id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="input-name">Full Name</label>
+              <input type="text" id="input-name" name="name" placeholder="John Doe" autocomplete="name"
+                aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="input-email">Email Address</label>
+              <input type="email" id="input-email" name="email" placeholder="john@example.com" autocomplete="email"
+                aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="input-message">Message</label>
+              <textarea id="input-message" name="message" placeholder="Tell me about your project..." rows="5"
+                aria-required="true"></textarea>
+            </div>
+            <div class="form-footer">
+              <span class="form-msg" id="form-msg" role="alert" aria-live="polite"></span>
+              <button type="submit" class="btn btn--primary" id="form-submit-btn">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer role="contentinfo">
+    <p>&copy; <span id="footer-year"></span> <strong>Alex Morgan</strong>. All rights reserved. Built with pure HTML,
+      CSS &amp; JS.</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </footer>
+
+  <!-- Project detail panels are rendered inline inside each card by script.js -->
+
+  <script src="script.js"></script>
+</body>
+
 </html>
