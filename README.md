@@ -17,9 +17,8 @@ It includes:
 - A Skills section
 - A Projects section
 - A Contact section
-- A footer with social links
+- A footer 
 
-The projects are loaded dynamically using an API, and JavaScript is used to handle the interactive parts of the website.
 
 ---
 
@@ -55,10 +54,6 @@ The Skills section shows the main technologies Alex works with:
 Each skill has a visual progress indicator.
 
 ### 📂 Projects
-
-Projects are loaded from an API instead of being hard-coded into the page.
-
-Visitors can:
 
 - Weather App
 - Addis Bank
@@ -98,14 +93,6 @@ These include:
 - Button hover effects
 - Project card hover effects
 - Hero animation
-- Loading spinner
-- Mobile menu animation
-
-### ⚠️ Loading & Error Handling
-
-While projects are being loaded, a loading spinner is displayed.
-
-If the API request fails, an error message is shown along with a **Retry** button.
 
 ---
 
@@ -114,7 +101,6 @@ If the API request fails, an error message is shown along with a **Retry** butto
 - HTML5
 - CSS3
 - JavaScript
-- Fetch API
 
 ### JavaScript Concepts Used
 
@@ -123,8 +109,6 @@ If the API request fails, an error message is shown along with a **Retry** butto
 - Functions
 - Arrays and objects
 - Array methods
-- `fetch()`
-- `async/await`
 - `try/catch`
 - Form validation
 - Dynamic content rendering
@@ -134,23 +118,14 @@ If the API request fails, an error message is shown along with a **Retry** butto
 ## 📁 Project Structure
 
 ```text
-Team- project-IBT/
+Team-project-IBT/
 │
+|__ public
+|
 ├── index.html
 │
-├── css/
-│   └── style.css
+|── style.css
 │
-├── js/
-│   └── script.js
-│
-├── images/
-│   ├── profile.jpg
-│   ├── project-1.jpg
-│   ├── project-2.jpg
-│   └── project-3.jpg
-│
-├── assets/
-│   └── ...
+|── script.js
 │
 └── README.md
