@@ -4,10 +4,6 @@ A responsive personal portfolio website for **Alex Morgan**, a Frontend Develope
 
 The website is designed to showcase Alex's skills, experience, projects, and contact information in a simple and modern way. It was built using HTML, CSS, and JavaScript, with a focus on responsive design and interactive features.
 
-## 🌐 Live Demo
-
-[View Live Portfolio](#)
-
 ---
 
 ## 📌 About the Project
@@ -21,7 +17,6 @@ It includes:
 - A Skills section
 - A Projects section
 - A Contact section
-- A responsive navigation menu
 - A footer with social links
 
 The projects are loaded dynamically using an API, and JavaScript is used to handle the interactive parts of the website.
@@ -45,7 +40,6 @@ This section gives visitors a quick overview of Alex's:
 - Specialization
 - Location
 
-There is also a button to download Alex's CV.
 
 ### 🛠️ Skills
 
@@ -66,11 +60,10 @@ Projects are loaded from an API instead of being hard-coded into the page.
 
 Visitors can:
 
-- Filter projects by category
-- View project cards
-- See the technologies used
-- Load more projects
-- Open a project to see more details
+- Weather App
+- Addis Bank
+- Habesha Restaurant
+
 
 ### 📋 Project Details
 
@@ -120,7 +113,7 @@ If the API request fails, an error message is shown along with a **Retry** butto
 
 - HTML5
 - CSS3
-- JavaScript (ES6+)
+- JavaScript
 - Fetch API
 
 ### JavaScript Concepts Used
@@ -141,7 +134,7 @@ If the API request fails, an error message is shown along with a **Retry** butto
 ## 📁 Project Structure
 
 ```text
-alex-morgan-portfolio/
+Team- project-IBT/
 │
 ├── index.html
 │
