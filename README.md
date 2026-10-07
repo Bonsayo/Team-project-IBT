@@ -4,10 +4,6 @@ A responsive personal portfolio website for **Alex Morgan**, a Frontend Develope
 
 The website is designed to showcase Alex's skills, experience, projects, and contact information in a simple and modern way. It was built using HTML, CSS, and JavaScript, with a focus on responsive design and interactive features.
 
-## 🌐 Live Demo
-
-[View Live Portfolio](#)
-
 ---
 
 ## 📌 About the Project
@@ -21,10 +17,8 @@ It includes:
 - A Skills section
 - A Projects section
 - A Contact section
-- A responsive navigation menu
-- A footer with social links
+- A footer 
 
-The projects are loaded dynamically using an API, and JavaScript is used to handle the interactive parts of the website.
 
 ---
 
@@ -45,7 +39,6 @@ This section gives visitors a quick overview of Alex's:
 - Specialization
 - Location
 
-There is also a button to download Alex's CV.
 
 ### 🛠️ Skills
 
@@ -62,15 +55,10 @@ Each skill has a visual progress indicator.
 
 ### 📂 Projects
 
-Projects are loaded from an API instead of being hard-coded into the page.
+- Weather App
+- Addis Bank
+- Habesha Restaurant
 
-Visitors can:
-
-- Filter projects by category
-- View project cards
-- See the technologies used
-- Load more projects
-- Open a project to see more details
 
 ### 📋 Project Details
 
@@ -105,14 +93,6 @@ These include:
 - Button hover effects
 - Project card hover effects
 - Hero animation
-- Loading spinner
-- Mobile menu animation
-
-### ⚠️ Loading & Error Handling
-
-While projects are being loaded, a loading spinner is displayed.
-
-If the API request fails, an error message is shown along with a **Retry** button.
 
 ---
 
@@ -120,8 +100,7 @@ If the API request fails, an error message is shown along with a **Retry** butto
 
 - HTML5
 - CSS3
-- JavaScript (ES6+)
-- Fetch API
+- JavaScript
 
 ### JavaScript Concepts Used
 
@@ -130,8 +109,6 @@ If the API request fails, an error message is shown along with a **Retry** butto
 - Functions
 - Arrays and objects
 - Array methods
-- `fetch()`
-- `async/await`
 - `try/catch`
 - Form validation
 - Dynamic content rendering
@@ -141,23 +118,14 @@ If the API request fails, an error message is shown along with a **Retry** butto
 ## 📁 Project Structure
 
 ```text
-alex-morgan-portfolio/
+Team-project-IBT/
 │
+|__ public
+|
 ├── index.html
 │
-├── css/
-│   └── style.css
+|── style.css
 │
-├── js/
-│   └── script.js
-│
-├── images/
-│   ├── profile.jpg
-│   ├── project-1.jpg
-│   ├── project-2.jpg
-│   └── project-3.jpg
-│
-├── assets/
-│   └── ...
+|── script.js
 │
 └── README.md
