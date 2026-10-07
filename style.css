@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+
+}
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1{
+    color:white;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li a {
+    color:white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+section{
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 40px 0;
+    background-color: #fff;
+    border-radius: 8px;
+
+
+}
+#Home {
+text-align: center;
+padding: 80px 20px;
+}
+
+#Home h1 {
+font-size: 40px;
+margin-bottom: 10px;
+}
+
+#Home h2 {
+color: #4da6ff;
+margin-bottom: 10px;
+}
+
+#Home p {
+margin-bottom: 20px;
+}
+
+button {
+background-color: #4da6ff;
+color: white;
+border: none;
+padding: 10px 18px;
+margin: 5px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button {
+background-color: #2878bd;
+}
+
+#about h1,
+#skills h1,
+#projects h1,
+#contact h1 {
+margin-bottom: 15px;
+}
+
+#skills ul {
+list-style-type: square;
+padding-left: 20px;
+}
+
+#skills li {
+margin: 8px 0;
+}
+
+#projects {
+text-align: center;
+}
+
+#projects-container {
+margin-top: 20px;
+min-height: 80px;
+}
+
+#contactForm {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+#contactForm textarea {
+height: 120px;
+resize: vertical;
+}
+
+#contactForm button {
+width: 150px;
+}
+
+footer {
+background-color: #222;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+nav {
+flex-direction: column;
+gap: 15px;
+}
+
+nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+section {
+    padding: 25px;
+}
+
+#Home h1 {
+    font-size: 30px;
+}
+
+}
